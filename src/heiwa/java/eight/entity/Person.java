@@ -22,6 +22,16 @@ public class Person {
         familyName = FAMILY_NAME_LIST[rand.nextInt(FAMILY_NAME_LIST.length)];
     }
 
+    /**
+     * Stream.iterate用に作ったコンストラクタ。
+     * デフォルトコンストラクタと同じ。引数は使用しない。
+     *
+     * @param p 使用しない引数
+     */
+    public Person(Person p) {
+        this();
+    }
+
     public String getFirstName() {
         return firstName;
     }
